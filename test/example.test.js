@@ -1,18 +1,18 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { renderCat } from '../utils.js';
+import { cats } from '../cat.data.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('test cat render function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = `<div class="cat"><h1>Leo</h1><img src="./assets/Leo.png"><p>Leo is 5 year(s) old and likes aggressive cuddling</p></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = renderCat(cats[0]);
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 });

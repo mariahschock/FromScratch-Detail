@@ -1,8 +1,9 @@
-// import functions and grab DOM elements
+import { cats } from './cat-data.js';
+import { renderCat } from './utils.js';
 
-// let state
+const catListEl = document.getElementById('cats');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+for (let cat of cats) {
+    const catDiv = renderCat(cat);
+    catListEl.append(catDiv);
+}
