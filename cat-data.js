@@ -8,7 +8,7 @@ export const cats = [
     },
     {
         id: '2',
-        name: 'TK, (Thicc Kitty)',
+        name: 'TK (Thicc Kitty)',
         age: 3,
         likes: 'carbs',
     },
