@@ -29,6 +29,9 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(https://wallpaperaccess.com/full/101227.jpg);
+    background-repeat:repeat-x;
+    background-size: cover;
 }
 
 main {
@@ -39,7 +42,7 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-section {
+/* section {
     background-color: var(--color5);
     max-width: 80%;
     display: flex;
@@ -51,7 +54,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
+} */
 
 header {
     display: flex;
