@@ -3,8 +3,6 @@ export function findById(id, data) {
 }
 
 export function renderCat(cat) {
-    const a = document.createElement('a');
-    a.href = `./cats/index.html?id=${cat.id}`;
     const div = document.createElement('div');
     div.classList.add('cat');
 
@@ -15,12 +13,15 @@ export function renderCat(cat) {
     nameSpan.textContent = cat.name;
     nameSpan.classList.add('name');
 
+    const a = document.createElement('a');
+    a.href = `./catStart/?id=${cat.id}`;
+
     // const span = document.createElement('span');
     // span.textContent = cat.likes;
 
-    a.append(div);
-    div.append(img, nameSpan);
-    return a;
+    a.append(img, nameSpan);
+    div.append(a);
+    return div;
 
     // const p = document.createElement('p');
     // p.textContent = `${cat.name} is ${cat.age} year(s) old and likes ${cat.likes}`;
