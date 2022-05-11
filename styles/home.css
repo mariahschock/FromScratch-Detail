@@ -33,3 +33,6 @@ h1 {
     font-weight: bolder;
     color: black;
 }
+.cat img:hover {
+    opacity: 0.9;
+}
