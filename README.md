@@ -16,6 +16,14 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
 Additional considerations:
+
+Basics:
+-Start by having home page show pictures and names of cats
+-Make pictures/names clickable
+-When clicked, will be taken to new page with further information about chosen cat
+
+
+
 - Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
 - Consider your data model. 
   - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
